@@ -1,7 +1,7 @@
 import Chai from './chai'
 
 function App() {
-
+  const username = 'Narendra';
 
   return (
     <>
@@ -10,6 +10,8 @@ function App() {
         <br />
         note : In this project I learned how to make react app using vite and how to clean code or files for easy understanding
       </h1>
+      <br />
+      <p>How to use Variable {username}</p>
     </>
   )
 }
