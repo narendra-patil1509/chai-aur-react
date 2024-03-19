@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  //useState hooks
   let [counter, setCounter] = useState(15);
 
   // let counter = 15;
