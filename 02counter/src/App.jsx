@@ -9,6 +9,7 @@ function App() {
 
   // let counter = 15;
    const addValue = () => {
+    // Interview
     // These setCounter send as  a callback function to update the state value and send as complete batch because same setCounter calling
     // setCounter(counter + 1);
     // setCounter(counter + 1);
