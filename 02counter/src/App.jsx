@@ -9,7 +9,17 @@ function App() {
 
   // let counter = 15;
    const addValue = () => {
-    setCounter(counter + 1);
+    // These setCounter send as  a callback function to update the state value and send as complete batch because same setCounter calling
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+
+    // These prevCounter send as the previous state of the counter to make sure it  is not affected by other re-renders and consider as seperate call
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1);
    }
 
    const removeValue = () => {
