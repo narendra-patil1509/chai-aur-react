@@ -5,7 +5,15 @@ import './index.css'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
 import { createBrowserRouter } from 'react-router-dom'
-import { AuthLayout, Signup } from './components/index.js'
+import { AuthLayout, Login } from './components/index.js'
+
+import Home from "./pages/Home.jsx";
+import AddPost from "./pages/AddPost.jsx";
+// import Signup from "./pages/Signup.jsx";
+// import Login from "./pages/Login.jsx";
+import EditPost from "./pages/EditPost.jsx";
+import Post from "./pages/Post.jsx";
+import AllPosts from "./pages/AllPosts.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: '<Home />',
+        element: <Home />,
       },
       {
         path: '/login',
@@ -61,7 +69,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/post/:slug',
-        element: <EditPost />
+        element: <Post />
       },
     ]
   }
