@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.8",
     "appwrite": "^13.0.0",
+    "cors": "^2.8.5",
     "html-react-parser": "^5.1.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
